@@ -1,0 +1,40 @@
+package a;
+
+
+/**
+ *
+ * @author PC
+ */
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class Server1 {
+    public static void main(String[] args) {
+        try {
+            DatagramSocket socket = new DatagramSocket(9876);
+            byte[] buffer = new byte[1024];
+            DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+
+            System.out.println("Server is waiting for an object...");
+            socket.receive(packet);
+
+            // Deserialize the object
+            ByteArrayInputStream bais = new ByteArrayInputStream(packet.getData());
+            ObjectInputStream ois = new ObjectInputStream(bais);
+            MyObject receivedObject = (MyObject) ois.readObject();
+
+            ois.close();
+            bais.close();
+            socket.close();
+
+            System.out.println("Object received: " + receivedObject);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+

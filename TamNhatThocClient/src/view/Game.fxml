@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="control.GameController">
+    <!-- Các thành phần của game sẽ được thêm vào đây qua controller -->
+    <Pane fx:id="gamePane" prefWidth="400.0" prefHeight="400.0" />
+</Pane>

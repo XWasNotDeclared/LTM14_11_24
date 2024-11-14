@@ -1,0 +1,44 @@
+/* CreateNewRoom.css */
+
+/* Styling for the main VBox */
+VBox {
+    -fx-background-color: #f0f8ff; /* Light fairy tale themed background */
+    -fx-spacing: 15px; /* Spacing between elements */
+    -fx-padding: 20px; /* Padding around the VBox */
+}
+
+/* Styling for all labels */
+Label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial"; /* Font hỗ trợ tiếng Việt */
+    -fx-text-fill: #4b0082; /* Indigo text color */
+}
+
+/* Styling for TextFields */
+TextField {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #4682b4; /* Blue border */
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial"; /* Font hỗ trợ tiếng Việt */
+}
+
+/* Styling for all buttons */
+Button {
+    -fx-background-color: #87cefa; /* Light blue background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial"; /* Font hỗ trợ tiếng Việt */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-border-radius: 10px;
+    -fx-border-color: #4682b4; /* Darker blue for border */
+    -fx-border-width: 2px;
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+
+Button:hover {
+    -fx-background-color: #4682b4; /* Darker blue on hover */
+    -fx-text-fill: #f0f8ff; /* Lighter text on hover */
+}

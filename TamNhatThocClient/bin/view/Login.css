@@ -1,0 +1,61 @@
+/* Định dạng chung cho VBox */
+.root {
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-background-color: #F9E6E6; /* Màu nền pastel nhẹ */
+    -fx-background-image: url("../../res/LoginBG.png");
+    -fx-background-size: cover; /* Hình ảnh sẽ phủ toàn bộ phần tử */
+    -fx-background-position: center center; /* Căn giữa ảnh */
+    -fx-background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+
+/* Định dạng cho các Label */
+.label {
+    -fx-font-size: 20px; /* Kích thước chữ */
+    -fx-text-fill: #000000; /* Màu tím nhẹ */
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial";
+}
+
+/* Định dạng cho TextField và PasswordField */
+.text-field, .password-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-border-color: #FFB6C1; /* Màu hồng nhạt */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8; /* Padding */
+    -fx-background-color: #FFF0F5; /* Màu nền hồng nhạt */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0.0, 0, 1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+/* Định dạng cho Button */
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-base: blue; /* Màu vàng tươi cho trạng thái mặc định */
+    -fx-text-fill: white; /* Màu chữ cho trạng thái mặc định */
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0.0, 0, 1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.button:hover {
+    -fx-background-color: #7B68EE; /* Màu xanh tím nhạt hơn khi hover */
+}
+
+/* Định dạng cho nút Đăng ký */
+.button-register {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-background-color: #FFB300; /* Màu vàng tươi */
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0.0, 0, 1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.button-register:hover {
+    -fx-background-color: #FFC107; /* Màu vàng đậm hơn khi hover */
+}

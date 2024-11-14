@@ -1,0 +1,31 @@
+/* Home.css */
+
+/* Styling for the main pane */
+Pane {
+    -fx-background-color: #f0f8ff; /* Light fairy tale themed background */
+}
+
+/* Styling for all buttons */
+Button {
+    -fx-background-color: #87cefa; /* Light blue */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Larger text */
+    -fx-font-family: "Arial"; /* Playful font */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-border-radius: 10;
+    -fx-border-color: #4682b4; /* Darker blue for border */
+    -fx-border-width: 2;
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+
+Button:hover {
+    -fx-background-color: #4682b4; /* Darker blue on hover */
+    -fx-text-fill: #f0f8ff; /* Light text on hover */
+}
+
+Pane {
+    -fx-background-image: url("../../res/HomeBG.png");
+    -fx-background-size: cover; /* Làm cho hình nền phủ hết phần tử */
+    -fx-background-position: center center; /* Căn giữa hình ảnh */
+    -fx-background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+}

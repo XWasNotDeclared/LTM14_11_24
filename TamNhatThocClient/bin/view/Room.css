@@ -1,0 +1,59 @@
+/* Home.css */
+
+/* Styling for the main pane */
+Pane {
+    -fx-background-color: #f0f8ff; /* Light fairy tale themed background */
+}
+
+/* Styling for all buttons */
+Button {
+    -fx-background-color: #87cefa; /* Light blue */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Larger text */
+    -fx-font-family: "Arial"; /* Playful font */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-border-radius: 10;
+    -fx-border-color: #4682b4; /* Darker blue for border */
+    -fx-border-width: 2;
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+
+Button:hover {
+    -fx-background-color: #4682b4; /* Darker blue on hover */
+    -fx-text-fill: #f0f8ff; /* Light text on hover */
+}
+
+/* Styling for ListView */
+ListView {
+    -fx-background-color: #e6e6fa; /* Light lavender background */
+    -fx-border-color: #8a2be2; /* Blue violet border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-control-inner-background: #f5f5f5; /* Slightly off-white inner background */
+}
+
+/* Styling for ComboBox */
+ComboBox {
+    -fx-background-color: #e0ffff; /* Light cyan background */
+    -fx-font-family: "Arial"; /* Playful font */
+    -fx-border-color: #20b2aa; /* Sea green border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+/* Styling for the text labels */
+Text {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial"; /* Playful font for text */
+    -fx-fill: #4b0082; /* Indigo text color */
+}
+
+/* Styling for the image */
+ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 5);
+}
+/* Lớp CSS cho Pane chứa UserName1 */
+.user-pane {
+    -fx-background-color: #ffef78; /* Màu vàng */
+}
+
